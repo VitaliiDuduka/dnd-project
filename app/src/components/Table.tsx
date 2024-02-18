@@ -1,5 +1,6 @@
 import React from "react";
 import Pagination from "./Pagination";
+import Trow from "./Trow";
 
 const Table = () => (
   <section className="container px-4 mx-auto">
@@ -21,7 +22,7 @@ const Table = () => (
       </div>
 
       <div className="flex items-center mt-4 gap-x-3">
-        <button className="flex items-center justify-center w-1/2 px-5 py-2 text-sm text-gray-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 sm:w-auto dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-gray-100 dark:text-gray-200 dark:border-gray-700">
+        {/* <button className="flex items-center justify-center w-1/2 px-5 py-2 text-sm text-gray-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 sm:w-auto dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-gray-100 dark:text-gray-200 dark:border-gray-700">
           <svg
             width="20"
             height="20"
@@ -46,9 +47,9 @@ const Table = () => (
           </svg>
 
           <span>Import</span>
-        </button>
+        </button> */}
 
-        <button className="flex items-center justify-center w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+        {/* <button className="flex items-center justify-center w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -65,7 +66,7 @@ const Table = () => (
           </svg>
 
           <span>Add vendor</span>
-        </button>
+        </button> */}
       </div>
     </div>
 
@@ -119,12 +120,19 @@ const Table = () => (
                 <tr>
                   <th
                     scope="col"
+                    className="px-12 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400"
+                  >
+                    Name
+                  </th>
+
+                  <th
+                    scope="col"
                     className="py-3.5 px-4 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400"
                   >
                     <button className="flex items-center gap-x-3 focus:outline-none">
                       <span>Previous company</span>
 
-                      <svg
+                      {/* <svg
                         className="h-3"
                         viewBox="0 0 10 11"
                         fill="none"
@@ -148,7 +156,7 @@ const Table = () => (
                           stroke="currentColor"
                           strokeWidth="0.3"
                         />
-                      </svg>
+                      </svg> */}
                     </button>
                   </th>
 
@@ -180,13 +188,18 @@ const Table = () => (
                     Show-up rate
                   </th>
 
-                  <th scope="col" className="relative py-3.5 px-4">
+                  <th
+                    scope="col"
+                    className="relative py-3.5 px-4 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400"
+                  >
                     <span className="sr-only">Edit</span>
+                    Edit
                   </th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
-                <tr>
+                <Trow />
+                {/* <tr>
                   <td className="px-4 py-4 text-sm font-medium whitespace-nowrap">
                     <div>
                       <h2 className="font-medium text-gray-800 dark:text-white ">
@@ -264,9 +277,16 @@ const Table = () => (
                       </svg>
                     </button>
                   </td>
-                </tr>
+                </tr> */}
 
                 <tr>
+                  <td className="px-4 py-4 text-sm font-medium whitespace-nowrap">
+                    <div>
+                      <p className="text-sm font-normal text-gray-600 dark:text-gray-400">
+                        name
+                      </p>
+                    </div>
+                  </td>
                   <td className="px-4 py-4 text-sm font-medium whitespace-nowrap">
                     <div>
                       <h2 className="font-medium text-gray-800 dark:text-white ">
@@ -321,7 +341,7 @@ const Table = () => (
                   </td>
 
                   <td className="px-4 py-4 text-sm whitespace-nowrap">
-                    <div className="w-48 h-1.5 bg-blue-200 overflow-hidden rounded-full">
+                    <div className="w-20 h-1.5 bg-blue-200 overflow-hidden rounded-full">
                       <div className="bg-blue-500 w-2/5 h-1.5"></div>
                     </div>
                   </td>
@@ -347,6 +367,13 @@ const Table = () => (
                 </tr>
 
                 <tr>
+                  <td className="px-4 py-4 text-sm font-medium whitespace-nowrap">
+                    <div>
+                      <p className="text-sm font-normal text-gray-600 dark:text-gray-400">
+                        name
+                      </p>
+                    </div>
+                  </td>
                   <td className="px-4 py-4 text-sm font-medium whitespace-nowrap">
                     <div>
                       <h2 className="font-medium text-gray-800 dark:text-white ">
@@ -401,7 +428,7 @@ const Table = () => (
                   </td>
 
                   <td className="px-4 py-4 text-sm whitespace-nowrap">
-                    <div className="w-48 h-1.5 bg-blue-200 overflow-hidden rounded-full">
+                    <div className="w-20 h-1.5 bg-blue-200 overflow-hidden rounded-full">
                       <div className="bg-blue-500 w-11/12 h-1.5"></div>
                     </div>
                   </td>
@@ -427,6 +454,13 @@ const Table = () => (
                 </tr>
 
                 <tr>
+                  <td className="px-4 py-4 text-sm font-medium whitespace-nowrap">
+                    <div>
+                      <p className="text-sm font-normal text-gray-600 dark:text-gray-400">
+                        name
+                      </p>
+                    </div>
+                  </td>
                   <td className="px-4 py-4 text-sm font-medium whitespace-nowrap">
                     <div>
                       <h2 className="font-medium text-gray-800 dark:text-white ">
@@ -481,7 +515,7 @@ const Table = () => (
                   </td>
 
                   <td className="px-4 py-4 text-sm whitespace-nowrap">
-                    <div className="w-48 h-1.5 bg-blue-200 overflow-hidden rounded-full">
+                    <div className="w-20 h-1.5 bg-blue-200 overflow-hidden rounded-full">
                       <div className="bg-blue-500 w-1/3 h-1.5"></div>
                     </div>
                   </td>
@@ -507,6 +541,13 @@ const Table = () => (
                 </tr>
 
                 <tr>
+                  <td className="px-4 py-4 text-sm font-medium whitespace-nowrap">
+                    <div>
+                      <p className="text-sm font-normal text-gray-600 dark:text-gray-400">
+                        name
+                      </p>
+                    </div>
+                  </td>
                   <td className="px-4 py-4 text-sm font-medium whitespace-nowrap">
                     <div>
                       <h2 className="font-medium text-gray-800 dark:text-white ">
@@ -561,7 +602,7 @@ const Table = () => (
                   </td>
 
                   <td className="px-4 py-4 text-sm whitespace-nowrap">
-                    <div className="w-48 h-1.5 bg-blue-200 overflow-hidden rounded-full">
+                    <div className="w-20 h-1.5 bg-blue-200 overflow-hidden rounded-full">
                       <div className="bg-blue-500 w-1/6 h-1.5"></div>
                     </div>
                   </td>
