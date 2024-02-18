@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "imageURL": "string",
+      "name": "string",
+      "skills": [
+        {
+          "id": "string",
+          "name": "string"
+        }
+      ],
+      "currentJob": {
+        "id": "string",
+        "name": "string"
+      },
+      "previousJobs": [
+        {
+          "id": "string",
+          "name": "string"
+        }
+      ],
+      "showUpRate": "number"
+    }
+  ]
+}
